@@ -1,9 +1,19 @@
-import React from 'react'
+import Image from 'next/image';
+import React, { FC } from 'react'
+
+type CarrouselTypes = {
+    image: {
+        url: string;
+        alt?: string;
+    }
+}
 
 
-function PetCarrousel() {
+const PetCarrousel: FC<CarrouselTypes> = ({ image }) => {
     return (
-        <div>PetCarrousel</div>
+        <div>PetCarrousel
+            <Image alt={image.alt || "image of a dog"} src={image.url} fill={true} />
+        </div>
     )
 }
 

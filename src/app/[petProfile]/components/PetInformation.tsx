@@ -4,12 +4,10 @@ import React from 'react'
 // import PetInfoButton from 'src/app/[petProfile]/components/PetInfoButton';
 
 function PetInformation() {
-    let name = "hey"
-    name = 12;
     return (
 
 
-        <div>PetInformation{name}</div>
+        <div>PetInformation</div>
     )
 }
 
