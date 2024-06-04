@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Page() {
 
-    const alex = "aleexx";
+    const alex = "aleexxs";
     return (
         <div>
             <h1>About</h1>
