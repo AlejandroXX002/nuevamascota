@@ -24,4 +24,4 @@ jobs:
         env:
           CI: true
       - name: Run cypress test
-        run: cypress:run
+        run: yarn cypress:run
