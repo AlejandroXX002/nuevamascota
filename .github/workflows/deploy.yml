@@ -4,7 +4,7 @@ on:
     branches:
       - 'main'
 jobs:
-  test:
+  unitTest:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
