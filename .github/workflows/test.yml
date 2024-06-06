@@ -15,7 +15,9 @@ jobs:
           node-version: 18
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-      - name: Run test
-        run: |
-          yarn test
-          yarn cypress:run
+      - name: Run jest test
+        run: yarn test
+      - name: Wait for server to be ready
+        run: yarn start
+      - name: Run cypress test
+        run: cypress:run
