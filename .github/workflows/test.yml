@@ -20,7 +20,7 @@ jobs:
       - name: Build project
         run: yarn build
       - name: Start server
-        run: yarn start
+        run: yarn start &
         env:
           CI: true
       - name: Run cypress test
